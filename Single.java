@@ -1,0 +1,79 @@
+/*
+class Object
+ {
+    Object navacha class ahe
+  code
+} 
+*/
+
+class Base   //class Base extends Object
+{
+    public int A,B;
+
+    public Base()
+     {
+        System.out.println("Base constructor");
+         this.A = 10;
+         this.B = 20;
+      }
+
+   public void fun()   // Defination 
+    {
+     System.out.println("Inside Base fun");
+
+    }   
+
+    public void gun()  //Defination
+    {
+     System.out.println("Inside Base gun");
+
+    }   
+
+    public void fun(int No)  // Overloaded Defination
+    {
+     System.out.println("Inside Base fun with one integer");
+
+    }   
+}
+
+class Derived extends Base   //class Derived : public Base .....c++ syntax
+{
+
+  public int X,Y;
+  public Derived()
+   {
+    
+     System.out.println("Derived constructor");
+     this.X = 30;
+     this.Y = 40;
+   }
+  public void sun()   //Defination
+    {
+    System.out.println("Inside Derived sun");
+    }
+
+   public void gun()  //Overrided Defination
+    {
+    System.out.println("Inside Derived gun");
+    }
+}
+
+
+class Single
+{
+  public static void main(String arr[])
+   {
+    // Base bobj1 = new Base();       //no Casting
+   //  Derived dobj1 = new Derived(); //no Casting
+     Base bobj2 = new Derived();    //Upcasting
+    // Derived dobj2 = new Base();     //Downcasting
+     
+     bobj2.fun();  //
+    bobj2.fun(11);  //
+    bobj2.gun();    //
+  //  bobj2.sun();  
+
+
+   }  
+
+}
