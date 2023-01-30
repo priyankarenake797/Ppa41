@@ -1,15 +1,18 @@
 #include<stdio.h>
-
-void display()
+void Display()
 {
+  int i = 0;
+  for(i =1 ; i <= 5 ; i++)
+  {
+    printf("Marvellous \n");
+  }
 
-   printf("Jay Ganesh.....\n");
- 
+
 }
- 
+
 int main()
 {
-  display();
-
-  return 0;
+   Display();
+  
+   return 0;
 }

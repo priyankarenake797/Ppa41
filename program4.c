@@ -1,32 +1,37 @@
-
 #include<stdio.h>
+typedef int BOOL;
 
-int AdditionOfNumber(int iNo1, int iNo2)
+#define TRUE 1
+#define FALSE 0
+
+BOOL Check(int iNo)
 {
-  int iAns = 0;
+    if((iNo% 5)==0)
+     {
+       return TRUE;
+     }
+   else
+     {
+       return FALSE;
+     }
 
-  iAns = iNo1 + iNo2;
-    return iAns;
 }
 
 int main()
 {
-     int iValue1 = 0, iValue2 = 0;
-     int iRet = 0;
-    
-     printf("Enter first number : \n");
-     scanf("%d",&iValue1);
+  int iValue = 0;
+  BOOL bRet = FALSE;
 
+   printf("Enter the Number");
+   scanf("%d",&iValue);
 
-    printf("Enter Second number : \n");
-     scanf("%d",&iValue2);
-    
-     iRet = AdditionOfNumber(iValue1,iValue2);
-    
-    printf("Addition is : %d\n",iRet);
-
-
-
-     return 0;
-
+     if(bRet == 0)
+      {
+        printf("Divisible by 5");
+       }
+    else
+     {
+        printf("Not Divisible by 5");
+       }
+  return 0;
 }

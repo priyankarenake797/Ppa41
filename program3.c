@@ -1,20 +1,22 @@
-
 #include<stdio.h>
+void Display()
+{
+  int i = 0;
+   i = 5;
 
+ for(i= 5;i>=1 ;i--)
+ {
+    printf("%d \n",i);
+    
+      
+ }
+
+}
 
 int main()
 {
-     int i, j , ans;
-     
-     i=10;
-     j=11;
-  
-    ans=i + j;
-    
-    printf("Addition is : %d\n",ans);
+  Display();
 
-
-
-     return 0;
+  return 0;
 
 }
